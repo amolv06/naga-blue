@@ -9,7 +9,7 @@ This is a derivative of the [[https://github.com/kenranunderscore/emacs-naga-the
 
 ** Installation:
 
-Clone this repository and add make the location known to Emacs as follows:
+Clone this repository and make the location known to Emacs as follows:
 
 #+BEGIN_SRC elisp
   (add-to-list 'custom-theme-load-path
