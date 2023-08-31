@@ -1,3 +1,22 @@
-A spin on the naga theme.
+* Naga-Blue
+
+This is a derivative of the [[https://github.com/kenranunderscore/emacs-naga-theme][Naga]] theme.
+
+* Previews
 
 [[./preview.png]]
+[[./preview2.png]]
+
+* Installation:
+
+Clone this repository and add make the location known to Emacs as follows:
+
+#+BEGIN_SRC elisp
+  (add-to-list 'custom-theme-load-path
+               "~/path/to/naga-blue")
+  (load-theme 'naga-blue t)
+
+#+END_SRC
+
+
+
