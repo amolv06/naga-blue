@@ -158,8 +158,8 @@ background color."
       (org-block (:background ,(if naga-blue-theme-use-lighter-org-block-background
                                    block
                                  bg)))
-      (org-block-begin-line (:slant oblique :foreground ,comment-dark))
-      (org-block-end-line (:slant oblique :foreground ,comment-dark))
+      (org-block-begin-line (:slant oblique :foreground ,org-block))
+      (org-block-end-line (:slant oblique :foreground ,org-block))
       (org-special-keyword (:foreground ,comment))
       (org-agenda-date-today (:foreground ,green-yellow :weight bold))
 
@@ -281,6 +281,7 @@ background color."
       (whitespace-fg "#555f55")
       (block "#060606")
       (block-light "#252525")
+      (org-block "#cccccc")
       (green-yellow "#73f273"))
   (apply #'custom-theme-set-faces
          (cons 'naga-blue (create-theme-colors))))
