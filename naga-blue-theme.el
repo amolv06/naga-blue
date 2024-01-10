@@ -279,7 +279,6 @@ background color."
       (red "#ffce80")
       (whitespace-fg "#555f55")
       (block "#060606")
-      (org-block "#cccccc")
       (block-light "#252525")
       (org-block "#cccccc")
       (green-yellow "#73f273"))
