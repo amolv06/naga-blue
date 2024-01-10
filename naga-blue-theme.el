@@ -153,13 +153,14 @@ background color."
       (org-headline-done (:foreground ,comment :strike-through t))
       (org-document-title (:foreground ,fnct :weight bold))
       (org-document-info (:foreground ,fnct))
+      (org-document-info-keyword (:foreground ,fnct))
       (org-verbatim (:foreground ,purple))
       (org-code (:foreground ,string))
       (org-block (:background ,(if naga-blue-theme-use-lighter-org-block-background
                                    block
                                  bg)))
-      (org-block-begin-line (:slant oblique :foreground ,comment-dark))
-      (org-block-end-line (:slant oblique :foreground ,comment-dark))
+      (org-block-begin-line (:slant oblique :foreground ,org-block))
+      (org-block-end-line (:slant oblique :foreground ,org-block))
       (org-special-keyword (:foreground ,comment))
       (org-agenda-date-today (:foreground ,green-yellow :weight bold))
 
@@ -251,8 +252,6 @@ background color."
       (persp-selected-face (:foreground ,keyword-blue-red :weight bold))
       
 
-      
-
       ;; eglot
       (eglot-highlight-symbol-face (:foreground ,fg :background ,bg-blue :weight bold)))))
 
@@ -280,6 +279,7 @@ background color."
       (red "#ffce80")
       (whitespace-fg "#555f55")
       (block "#060606")
+      (org-block "#cccccc")
       (block-light "#252525")
       (green-yellow "#73f273"))
   (apply #'custom-theme-set-faces
